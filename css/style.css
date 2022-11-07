@@ -1,0 +1,203 @@
+:root {
+    --logoColor: #098dae;
+    --logoColor2: #00b3df;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    /* background-image: linear-gradient(to top right, #00091b, #001d47); */
+}
+
+.nav-bar {
+    padding: 20px 0px 10px 0px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+    min-height: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--logoColor);
+}
+
+nav .logo {
+    padding: 10px 0px;
+    font-size: 24px;
+    font-weight: lighter;
+    letter-spacing: -8px;
+}
+
+nav .logo a {
+    color: var(--logoColor);
+    /* rgb(214, 137, 22); */
+}
+
+.navigation {
+    display: flex;
+}
+
+nav .navigation li {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px;
+    list-style: none;
+}
+
+nav .navigation ul {
+    padding: 0px 0px;
+    margin: 0px 15px;
+    font-size: 24px;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav .navigation ul ::after {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: var(--logoColor);
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+
+nav .navigation ul :hover::after {
+    width: 100%;
+
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    height: 90vh;
+    /* margin-left: 10vw; */
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9), transparent 70%), url(../images/bootcamp_1.jpg);
+    background-position: 0% 10%;
+    background-size: cover;
+
+}
+
+.welcome .welcome-text {
+    margin-left: 10%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.welcome-text h1 {
+    font-size: 80px;
+    line-height: 0.8em;
+    margin-bottom: 20px;
+}
+
+.welcome-text p {
+    font-size: 30px;
+}
+
+.signup-button {
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--logoColor);
+    border-radius: 5px;
+    font-size: 24px;
+    user-select: none;
+}
+
+.nav-bar .signup-button {
+    padding: 10px 15px;
+    margin-left: 25px;
+    color: #fff;
+}
+
+.welcome .signup-button {
+    font-size: 20px;
+    margin-top: 50px;
+    width: 200px;
+    height: 60px;
+    color: #fff;
+}
+
+
+/* .img-box {
+    width: 1024px;
+    height: 512px;
+}
+
+.welcome img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    filter: saturate(50%);
+} */
+
+main {
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+}
+
+.info-boxes {
+    margin: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.infobox {
+    padding: 20px 25px;
+    margin: 0px 10px;
+    min-height: 200px;
+    border: 1px solid var(--logoColor);
+    border-radius: 5px;
+}
+
+.infobox h2 {
+    margin-bottom: 10px;
+}
+
+.infobox2 {
+    width: 800px;
+    margin: 100px 0px;
+    padding-bottom: 20px;
+
+}
+
+.infobox2:nth-of-type(even) {
+    align-self: flex-end;
+}
+
+.infobox2 h2 {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 40px;
+    color: var(--logoColor);
+    border-bottom: 1px solid var(--logoColor);
+}
+
+.infobox2 p {
+    font-size: 20px;
+}
+
+#main-footer {
+    border-top: 1px solid var(--logoColor);
+    height: 100px;
+}
